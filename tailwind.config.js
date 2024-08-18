@@ -12,6 +12,10 @@ module.exports = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
+      container: {
+        center: true,
+        padding: '2rem',
+      },
     },
   },
   plugins: [
@@ -23,9 +27,13 @@ module.exports = {
         mytheme: {
           "primary": "#FF3811",
           "secondary": "#f6d860",
-          "accent": "#37cdbe",
-          "neutral": "#3d4451",
-          "base-100": "#ffffff",
+
+          ".btn-primary": {
+            "color": "#fff"
+          },
+          ".btn-outline.btn-primary:hover": {
+            "color": "#fff"
+          },
         },
       },
       "dark",
